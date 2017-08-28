@@ -1,7 +1,10 @@
 body {
-  font-family: 'Roboto', sans-serif;  
   margin: 0;
   padding: 0;
+  font-family: 'Roboto', sans-serif;  
+  font-size: 16px;
+  line-height: 1.5;
+  color: #3a3a3a;
 }
 
 h1 {
@@ -52,6 +55,7 @@ ul {
 li {
   padding-bottom: 5px;
 }
+
 .col-3 {
   margin: 0;
   padding: 0;
@@ -60,7 +64,6 @@ li {
 }
 
 .col-8 {
-  width: 75%;
   margin-bottom: 60px;
   background-color: #ffdba9;
   border: 1px solid #ffbb5d;
@@ -113,15 +116,14 @@ li {
   position: relative;
   display: flex;
   align-items: center;
-  max-width: 100%;    
   background: url('images/bg.png') no-repeat center;
+  background-size: cover;
 }
 
 .card {
   margin: 20px 30px 40px 0;
   display: inline-block;
   width: 380px;
-  height: 215px;
 }
 
 footer {
@@ -132,4 +134,56 @@ footer {
 
 footer .container {
   padding-top: 60px;
+}
+
+@media screen and (max-width: 992px) {
+  .col-8 {
+    width: 1000px;
+  }  
+  .col-12 {
+    width: 1280px;
+  }   
+  img {
+    width: 100%;
+  }  
+  .card {
+    margin: 20px 30px 40px 0;    
+    height: 215px;    
+  }    
+}
+
+@media screen and (max-width: 768px) {
+  .col-8 {
+    width: 800px;
+  } 
+  .col-12 {
+    width: 800px;
+  }   
+  img {
+    width: 80%;
+  } 
+  .card {
+    margin: 20px 30px 20px 0;
+    height: auto;
+  }    
+}
+
+@media screen and (max-width: 480px) {
+  .col-8 {
+    width: 300px;
+  } 
+  .col-12 {
+    width: 300px;
+  }   
+  .nav-links {
+    display: none;
+  }   
+  img {
+    width: 100%;
+  } 
+  .card {
+    margin: 20px 30px 0 0;
+    max-width: 100%;
+    height: auto;
+  }  
 }
