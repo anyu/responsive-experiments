@@ -1,0 +1,6 @@
+- best way to organize media queries w/ vanilla CSS? separate section above/below default CSS or repeated under each attribute?
+- image resizing
+- using REMs, EMS, %s
+- using grid system
+- how Sass helps
+
